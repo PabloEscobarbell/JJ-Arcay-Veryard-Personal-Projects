@@ -53,11 +53,11 @@ def createEmail(subject, sender, receiver, dataFile, email_type):
     email["From"] = sender
     email["To"] = receiver
     if email_type.lower() == "top-line":
-        email.set_content("Please find attached the latest Catit UK Recharge Top Line report.")
+        email.set_content("Please find attached the latest Top Line report.")
     elif email_type.lower() == "product-subscriptions":
-        email.set_content("Please find attached the latest Catit UK Recharge Product Subscriptions report.")
+        email.set_content("Please find attached the latest Product Subscriptions report.")
     elif email_type.lower() == "revenue":
-        email.set_content("Please find attached the latest Catit UK Recharge Revenue report.")
+        email.set_content("Please find attached the latest Revenue report.")
     else:
         print("ERROR: Invalid email type specified.")
         sys.exit(1)

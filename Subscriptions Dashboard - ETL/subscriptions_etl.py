@@ -11,9 +11,9 @@ try:
     load_dotenv()
     EMAIL_ADDRESS = os.getenv("userEmail")
     PASSWORD = os.getenv("userPassword")
-    RECHARGE_TOP_LINE = os.getenv("catit_uk_recharge_top_line")
-    RECHARGE_PRODUCT_SUBSCRIPTIONS = os.getenv("catit_uk_recharge_product_subscriptions")
-    RECHARGE_REVENUE = os.getenv("catit_uk_recharge_revenue")
+    RECHARGE_TOP_LINE = os.getenv("recharge_top_line")
+    RECHARGE_PRODUCT_SUBSCRIPTIONS = os.getenv("recharge_product_subscriptions")
+    RECHARGE_REVENUE = os.getenv("recharge_revenue")
     folder1 = fr'{os.getenv("recharge_data_dump")}'
     oneTimeIngestionFolder = fr'{os.getenv("recharge_one_time_ingestion_folder")}'
     ingestedFilesFolder = fr'{os.getenv("recharge_ingested_files_folder")}'
